@@ -3,7 +3,7 @@ import { SearchBox } from 'components/SearchBox/SearchBox';
 import { getProducts } from 'fakeApi';
 import { useSearchParams } from 'react-router-dom';
 
-export const Products = () => {
+const Products = () => {
   const products = getProducts();
   const [searchParams, setSearchParams] = useSearchParams();
   const productName = searchParams.get('name') ?? '';
@@ -24,3 +24,5 @@ export const Products = () => {
     </>
   );
 };
+
+export default Products;

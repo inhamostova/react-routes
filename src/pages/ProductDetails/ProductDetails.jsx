@@ -1,6 +1,15 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Link, useLocation } from 'react-router-dom';
 
-export const ProductDetails = () => {
+const ProductDetails = () => {
   const { productId } = useParams();
-  return <div>Now showing product with id - {productId}</div>;
+  const location = useLocation();
+  const backLinkHref = location.state?.from ?? '/products';
+  return (
+    <div>
+      <Link to={backLinkHref}>Back</Link>
+      <div>Now showing product with id - {productId}</div>
+    </div>
+  );
 };
+
+export default ProductDetails;
