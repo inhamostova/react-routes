@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[436],{436:function(e,t,r){r.r(t);var o=r(452),c=r(184);t.default=function(){var e,t,r=(0,o.UO)().productId,d=null!==(e=null===(t=(0,o.TH)().state)||void 0===t?void 0:t.from)&&void 0!==e?e:"/products";return(0,c.jsxs)("div",{children:[(0,c.jsx)(o.rU,{to:d,children:"Back"}),(0,c.jsxs)("div",{children:["Now showing product with id - ",r]})]})}}}]);
+//# sourceMappingURL=436.dfd6bc94.chunk.js.map
